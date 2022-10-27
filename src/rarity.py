@@ -92,7 +92,7 @@ background = ['Brown', 'Yellow', 'Orange', 'Pink', 'Purple', 'Green', 'Red', 'Wh
 layers.append([0, string[0], background[int(string[0])]])
 
 # Layer 1: Digits
-layers.append([1, '-', '-'])
+layers.append([1, 'D', '-'])
 
 # Layer 2: Rear
 rear = ['Baseball Bat', 'Ukulele', 'Skateboard', 'Katanas', 'LFG Balloon', 'Rocket Launcher', 'Devil Wings', 'Angel Wings', 'Stick Horse', 'Fancy Confetti']
