@@ -1,0 +1,36 @@
+{
+    "name": "33390.100kCat.eth",
+    "description": "100k Cats for 100k ENS Club",
+    "external_url": "https://100kCat.eth.limo",
+    "image": "ipfs://QmVMG1s7u9Vp9fN5iUfGZuAW4LE1Ag7vBn28J47X973PeC",
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Pink"
+        },
+        {
+            "trait_type": "Rear",
+            "value": "Katanas"
+        },
+        {
+            "trait_type": "Body",
+            "value": "Sphynx"
+        },
+        {
+            "trait_type": "Clothing",
+            "value": "Polkadot Shirt"
+        },
+        {
+            "trait_type": ".eth",
+            "value": "Bow Tie"
+        },
+        {
+            "trait_type": "Eyewear",
+            "value": "3D Glasses"
+        },
+        {
+            "trait_type": "Hat",
+            "value": "Brown Football Helmet"
+        }
+    ]
+}

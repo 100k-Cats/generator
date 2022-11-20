@@ -1,0 +1,36 @@
+{
+    "name": "42059.100kCat.eth",
+    "description": "100k Cats for 100k ENS Club",
+    "external_url": "https://100kCat.eth.limo",
+    "image": "ipfs://QmW7yPiuJXj8yzvGMJTkozanpZm9QPEy1odFr6suVDsEWc",
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Purple"
+        },
+        {
+            "trait_type": "Body",
+            "value": "Bengal"
+        },
+        {
+            "trait_type": "Clothing",
+            "value": "Football Pads"
+        },
+        {
+            "trait_type": ".eth",
+            "value": "Dog Tags"
+        },
+        {
+            "trait_type": "Eyewear",
+            "value": "Rainbow Goggles"
+        },
+        {
+            "trait_type": "Hat",
+            "value": "Top Hat"
+        },
+        {
+            "trait_type": "Mouth",
+            "value": "Burning Cigar"
+        }
+    ]
+}
