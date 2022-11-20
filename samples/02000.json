@@ -1,0 +1,32 @@
+{
+    "name": "02000.100kCat.eth",
+    "description": "100k Cats for 100k ENS Club",
+    "external_url": "https://100kCat.eth.limo",
+    "image": "ipfs://QmREkL6cysT729NsiCw1crxcUoGxhikUAHBS6mm3HUHfzh",
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Brown"
+        },
+        {
+            "trait_type": "Rear",
+            "value": "Baseball Bat"
+        },
+        {
+            "trait_type": "Body",
+            "value": "Bengal"
+        },
+        {
+            "trait_type": "Clothing",
+            "value": "Football Pads"
+        },
+        {
+            "trait_type": ".eth",
+            "value": "Boots"
+        },
+        {
+            "trait_type": "Crown",
+            "value": "Silver"
+        }
+    ]
+}

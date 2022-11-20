@@ -1,0 +1,36 @@
+{
+    "name": "11555.100kCat.eth",
+    "description": "100k Cats for 100k ENS Club",
+    "external_url": "https://100kCat.eth.limo",
+    "image": "ipfs://QmYPAqBF8N8Lv1hm24Q7t8Fmktu16ATKbBFajofb5UXMG2",
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Yellow"
+        },
+        {
+            "trait_type": "Rear",
+            "value": "Rocket Launcher"
+        },
+        {
+            "trait_type": "Body",
+            "value": "Abyssinin"
+        },
+        {
+            "trait_type": "Clothing",
+            "value": "Camo Tanktop"
+        },
+        {
+            "trait_type": ".eth",
+            "value": "Dog Tags"
+        },
+        {
+            "trait_type": "Eyewear",
+            "value": "3D Glasses"
+        },
+        {
+            "trait_type": "Hat",
+            "value": "Army Helmet"
+        }
+    ]
+}

@@ -3,16 +3,19 @@ import { exec } from 'child_process';
 import util from 'util';
 
 const execPromise = util.promisify(exec);
-let range = [0, 2];
-const list = ['Background', 'Digits', 'Rear', 'Body', 'Clothing', '.eth', 'Eyewear', 'Hat', 'Crown', 'Mouth', 'Foreground']
+let range = [1, 16180, 7];
+// let range = [...Array(1000).keys()];
 
-for (var subdomain = range[0]; subdomain < range[1] + 1; subdomain++) {
+for (var index = 0; index < range.length; index++) {
+  let subdomain = range[index];
   let subdomain_ = String(subdomain).padStart(5, '0');
   let command = `bash ./src/generator.sh ${subdomain_}`;
   try {
     const {stdout, stderr} = await execPromise(command);
     console.log(`CID/PNG ${subdomain_} (${subdomain_}.png): ` + `${stdout.split('+')[0]}`);
     let attr = stdout.split('+')[1].replace(/(\r\n|\n|\r)/gm, "").split('=');
+    let prop = stdout.split('+')[2].replace(/(\r\n|\n|\r)/gm, "").split('=');
+    let list = stdout.split('+')[3].replace(/(\r\n|\n|\r)/gm, "").split('=');
     var attributes = [];
     for (var i=0; i < attr.length; i++) {
       if (attr[i] != '-') {
@@ -20,6 +23,15 @@ for (var subdomain = range[0]; subdomain < range[1] + 1; subdomain++) {
           {
             "trait_type": `${list[i]}`,
             "value": `${attr[i]}`
+          }
+        )
+      }
+    }
+    for (var i=0; i < prop.length; i++) {
+      if (prop[i] != '-') {
+        attributes.push(
+          {
+            "value": `${prop[i]}`
           }
         )
       }
@@ -45,12 +57,12 @@ for (var subdomain = range[0]; subdomain < range[1] + 1; subdomain++) {
 const contractURI = {
   "name": "100k ENS Cats",
   "description": "100k Cats for 100k ENS Club",
-  "image": `ipfs://<avatar>`,
+  "image": `ipfs://QmRbp24r7E3e39S8AicNri6Euq5gdeHVb9fDsepZbwUCiV`,
   "external_link": "https://100kCat.eth.limo",
   "seller_fee_basis_points": 750,
-  "fee_recipient": "0xblablabla..."
+  "fee_recipient": "0xD62fB2a45ECdCF23f8587acC92119d4705d25Bb5"
 };
-fs.writeFile(`./dist/json/contractURI.json`, JSON.stringify(contractURI, null, 4), err => {
+fs.writeFile(`./dist/contractURI.json`, JSON.stringify(contractURI, null, 4), err => {
   if (err) {
     console.error(err);
   }
